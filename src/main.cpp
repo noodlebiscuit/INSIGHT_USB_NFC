@@ -1,19 +1,33 @@
 /*
- * ============================================================================
- * Reads and writes NDEF records using an NXP PN532 and ARDUNINO NANO
- * ----------------------------------------------------------------------------
- * 
- * This application was created by SKF UK Ltd for use with SKF INSIGHT RAIL 
- * It is not intended for public release, primarily as its functionality is 
- * based on private (internal SKF testing) of INSIGHT sensor commissioning
- * 
- * All libraries used were created by AdaFruit
- * 
- * REVISION 1.0 April 2020
- * Alex Pinkerton
- * 
- * ============================================================================
- */
+=============================================================================
+Reads and writes NDEF records using an NXP PN532 and ARDUNINO NANO
+
+This software was created to allow an Arduino Nano 328P to communicate with
+an ADAFRUIT or SUNFOUNDER PN532 NFC card using a simple series of commands
+issued to the Arduino over a USB serial link.
+
+All libraries used are the property of their respective authors and are each 
+covered by their own license agreements 
+
+Copyright (c) 2020, SKF UK Ltd
+
+Redistribution and use in source and binary forms, with or without
+modification, is not permitted under any circumstances
+    
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ''AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+REVISION 1.0 April 2020
+==============================================================================
+*/
 
 #include "main.h"
 
