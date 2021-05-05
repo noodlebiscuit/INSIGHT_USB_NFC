@@ -630,11 +630,19 @@ InsightSenor GetSensorType(NDEF_Message *message)
 		uint8_t buffer[record.getPayloadLength()];
 		record.getPayload(buffer);
 
-		if (needleSearch(buffer, CMWR_3, record.getPayloadLength(), 6))
+		if (needleSearch(buffer, CMWR_31, record.getPayloadLength(), 7))
 		{
 			return CMWR3;
 		}
-		else if (needleSearch(buffer, CMWR_2, record.getPayloadLength(), 6))
+		else if (needleSearch(buffer, CMWR_23, record.getPayloadLength(), 7))
+		{
+			return CMWR3;
+		}
+		else if (needleSearch(buffer, CMWR_21, record.getPayloadLength(), 7))
+		{
+			return CMWR2;
+		}
+		else if (needleSearch(buffer, CMWR_IIGO, record.getPayloadLength(), 9))
 		{
 			return CMWR2;
 		}
