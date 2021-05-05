@@ -648,7 +648,7 @@ InsightSenor GetSensorType(NDEF_Message *message)
 		}
 		else if (needleSearch(buffer, CMWR_1, record.getPayloadLength(), 6))
 		{
-			return CMWR1;
+			return CMWR2;
 		}
 	}
 	return Unknown;
