@@ -642,11 +642,19 @@ InsightSenor GetSensorType(NDEF_Message *message)
 		{
 			return CMWR2;
 		}
+		else if (needleSearch(buffer, CMWR_22, record.getPayloadLength(), 7))
+		{
+			return CMWR2;
+		}
 		else if (needleSearch(buffer, CMWR_IIGO, record.getPayloadLength(), 9))
 		{
 			return CMWR2;
 		}
 		else if (needleSearch(buffer, CMWR_1, record.getPayloadLength(), 6))
+		{
+			return CMWR2;
+		}
+		else if (needleSearch(buffer, CMWR_2, record.getPayloadLength(), 6))
 		{
 			return CMWR2;
 		}
