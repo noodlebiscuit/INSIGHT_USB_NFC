@@ -634,7 +634,11 @@ InsightSenor GetSensorType(NDEF_Message *message)
 		{
 			return CMWR3;
 		}
-		else if (needleSearch(buffer, CMWR_23, record.getPayloadLength(), 7))
+		else if (needleSearch(buffer, CMWR_32, record.getPayloadLength(), 7))
+		{
+			return CMWR3;
+		}
+		else if (needleSearch(buffer, CMWR_33, record.getPayloadLength(), 7))
 		{
 			return CMWR3;
 		}
@@ -646,15 +650,11 @@ InsightSenor GetSensorType(NDEF_Message *message)
 		{
 			return CMWR2;
 		}
+		else if (needleSearch(buffer, CMWR_23, record.getPayloadLength(), 7))
+		{
+			return CMWR3;
+		}
 		else if (needleSearch(buffer, CMWR_IIGO, record.getPayloadLength(), 9))
-		{
-			return CMWR2;
-		}
-		else if (needleSearch(buffer, CMWR_1, record.getPayloadLength(), 6))
-		{
-			return CMWR2;
-		}
-		else if (needleSearch(buffer, CMWR_2, record.getPayloadLength(), 6))
 		{
 			return CMWR2;
 		}
