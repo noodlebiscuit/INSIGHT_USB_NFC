@@ -48,10 +48,10 @@
 
 // ============================================================================
 
-#define PN532_SCK (13)	// SPI pin SCLK
-#define PN532_MOSI (10) // SPI pin MOSI
+#define PN532_SCK (13)  // SPI pin SCLK
 #define PN532_MISO (12) // SPI pin MISO
-#define PN532_SS (11)	// SPI pin SS
+#define PN532_MOSI (11) // SPI pin MOSI
+#define PN532_SS (10)   // SPI pin SS
 
 // ============================================================================
 
